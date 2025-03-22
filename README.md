@@ -22,19 +22,19 @@
 ### Получение всех настроек
 
 ```
-GET /wp-json/wc/v3/settings
+GET /wp-json/wp/settings
 ```
 
 ### Получение настройки по идентификатору
 
 ```
-GET /wp-json/wc/v3/settings/{id}
+GET /wp-json/wp/settings/{id}
 ```
 
 ### Обновление настройки по идентификатору
 
 ```
-PUT /wp-json/wc/v3/settings/{id}
+PUT /wp-json/wp/settings/{id}
 ```
 
 Пример тела запроса:

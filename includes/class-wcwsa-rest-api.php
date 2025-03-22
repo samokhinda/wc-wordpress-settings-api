@@ -7,14 +7,14 @@ class WCWSA_RestApi {
 
     public function register_routes() {
         // Получение всех настроек из списка
-        register_rest_route('wc/v3', '/settings', [
+        register_rest_route('wp', '/settings', [
             'methods' => 'GET',
             'callback' => [$this, 'get_settings'],
             'permission_callback' => [$this, 'check_permissions'],
         ]);
         
         // Получение конкретной настройки по ключу
-        register_rest_route('wc/v3', '/settings/(?P<key>[a-zA-Z0-9_-]+)', [
+        register_rest_route('wp', '/settings/(?P<key>[a-zA-Z0-9_-]+)', [
             'methods' => 'GET',
             'callback' => [$this, 'get_setting'],
             'permission_callback' => [$this, 'check_permissions'],
@@ -28,7 +28,7 @@ class WCWSA_RestApi {
         ]);
         
         // Обновление настройки
-        register_rest_route('wc/v3', '/settings/(?P<key>[a-zA-Z0-9_-]+)', [
+        register_rest_route('wp', '/settings/(?P<key>[a-zA-Z0-9_-]+)', [
             'methods' => 'PUT',
             'callback' => [$this, 'update_setting'],
             'permission_callback' => [$this, 'check_permissions'],
@@ -42,7 +42,7 @@ class WCWSA_RestApi {
         ]);
         
         // Создание новой настройки
-        register_rest_route('wc/v3', '/settings', [
+        register_rest_route('wp', '/settings', [
             'methods' => 'POST',
             'callback' => [$this, 'create_setting'],
             'permission_callback' => [$this, 'check_permissions'],
