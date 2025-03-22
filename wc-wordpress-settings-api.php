@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WordPress Settings API for WooCommerce
- * Description: Плагин для получения и изменения настроек WordPress через WooCommerce API.
+ * Description: Безопасный REST API для работы с настройками WordPress через WooCommerce API с поддержкой авторизации.
  * Version: 1.2
  * Author: Телеботы
  */

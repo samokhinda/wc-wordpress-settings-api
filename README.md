@@ -1,7 +1,7 @@
 # WordPress Settings API для WooCommerce
 
 ## Описание
-Этот плагин для WordPress предоставляет REST API эндпоинты для получения и изменения настроек WordPress через WooCommerce API.
+Плагин WordPress, предоставляющий REST API для работы с настройками WordPress через безопасные конечные точки WooCommerce API. Позволяет получать и изменять настройки WordPress с использованием авторизации WooCommerce.
 
 ## Технические особенности
 
@@ -22,19 +22,19 @@
 ### Получение всех настроек
 
 ```
-GET /wp-json/wp/settings
+GET /wp-json/wc/v3/wp/settings
 ```
 
 ### Получение настройки по идентификатору
 
 ```
-GET /wp-json/wp/settings/{id}
+GET /wp-json/wc/v3/wp/settings/{id}
 ```
 
 ### Обновление настройки по идентификатору
 
 ```
-PUT /wp-json/wp/settings/{id}
+PUT /wp-json/wc/v3/wp/settings/{id}
 ```
 
 Пример тела запроса:
@@ -48,7 +48,7 @@ PUT /wp-json/wp/settings/{id}
 ### Создание новой настройки
 
 ```
-POST /wp-json/wc/v3/settings
+POST /wp-json/wc/v3/wp/settings
 ```
 
 Пример тела запроса:
